@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f3eee4;
+  --foreground: #2a2a21;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-normal;
+  }
+
+  ::selection {
+    @apply bg-olive-300/50 text-forest-900;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-luxe text-olive-600;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-9 py-4 text-[0.72rem] font-medium uppercase tracking-luxe transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-olive-500 focus-visible:ring-offset-2 focus-visible:ring-offset-cream;
+  }
+
+  .btn-primary {
+    @apply btn bg-olive-500 text-cream hover:bg-olive-600;
+  }
+
+  .btn-accent {
+    @apply btn bg-olive-500 text-cream hover:bg-olive-600;
+  }
+
+  .btn-dark {
+    @apply btn bg-forest-800 text-cream hover:bg-forest-900;
+  }
+
+  .btn-ghost {
+    @apply btn border border-forest-300 text-forest-800 hover:border-forest-600 hover:bg-forest-50;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-olive-500 after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .card {
+    @apply border border-forest-100 bg-cream/60 p-8 transition-all duration-500 hover:border-forest-200 hover:bg-cream;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 border border-forest-200 bg-cream px-4 py-2 text-[0.72rem] font-medium uppercase tracking-[0.18em] text-forest-700;
+  }
+
+  .rule {
+    @apply h-px w-10 bg-olive-500/70;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* image panels are clean rectangles in this editorial style */
+  .blob,
+  .blob-alt {
+    border-radius: 0.5rem;
+  }
+}
