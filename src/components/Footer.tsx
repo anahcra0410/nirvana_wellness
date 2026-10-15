@@ -67,7 +67,7 @@ export default function Footer() {
           </h4>
           <ul className="mt-5 space-y-3 text-sm text-cream/70">
             <li>
-              <a className="transition-colors hover:text-cream" href={`tel:${site.phone}`}>
+              <a className="transition-colors hover:text-cream" href={`tel:${site.phoneHref}`}>
                 {site.phone}
               </a>
             </li>

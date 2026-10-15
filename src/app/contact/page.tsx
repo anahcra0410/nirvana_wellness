@@ -12,7 +12,7 @@ const contactItems = [
   {
     label: "Phone & Text",
     value: site.phone,
-    href: `tel:${site.phone}`,
+    href: `tel:${site.phoneHref}`,
     note: "Call or leave a text message",
   },
   {

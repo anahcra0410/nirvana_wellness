@@ -1,8 +1,9 @@
 export const site = {
   name: "Nirvana Wellness Center",
   tagline: "Ayurvedic & Spa Therapies",
-  phone: "(000) 000-0000",
-  email: "hello@nirvanawellnesscentre.com",
+  phone: "+1 (973) 641-7701",
+  phoneHref: "+19736417701",
+  email: "Pradeep@nirvanawellnesscentre.com",
   location: "By appointment",
   experienceYears: 15,
   social: {
